@@ -17,15 +17,49 @@
 }
 
 body {
+    background-color: var(--black);
     box-sizing: border-box;
+    display: grid;
+    grid-template-areas: 'aside header header header'
+                         'aside main main main'
+                         'footer footer footer footer';
 }
 
+.asideMenu {grid-area: aside;}
+.navegacao_cabecalho {grid-area: header;}
+.navegacao {grid-area: main;}
+.rodape {grid-area: footer;}
+
 .asideMenu {
-    width: 20%;
     background-color: var(--black);
-    height: 100vh;
-    float: left;
+    display: flex;
+    flex-direction: column;
 }
+
+.asideMenu-tituloMenu {
+    display: flex;
+    gap: 8px;
+    font-family: var(--fontePoppins);
+    color: var(--white);
+    font-size: 22px;
+    font-weight: 700;
+    align-items: center;
+}
+
+.media {
+    margin: 40px;
+}
+
+.asideMenu_button{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: var(--white);
+    font-family: var(--fontePoppins);
+    gap: 12px;
+    margin-bottom: 35px;
+}
+
 
 .right {
     display: flex;
@@ -120,10 +154,111 @@ body {
 
 .navegacao {
     background-color: var(--black);
-    padding: 3%;
+    padding-left: 3%;
 }
 
-.navegacao_trending_titulo {
+.navegacao_titulo {
     font-family: var(--fontePoppins);
     color: var(--white);
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin: 6px 0 16px 0;
+}
+
+.carrosel_lista {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    list-style: none;
+    height: 401px;
+}
+
+.carrosel_lista_item {
+    border: 1px solid var(--white);
+    border-radius: 26px;
+    margin: 24px;
+    display: flex;
+    flex-direction: column;
+}
+
+.lista_item-topcard {
+    background-size: cover;
+    flex-grow: 2;
+    position: relative;
+    border-radius: 25px 25px 0 0;
+}
+
+.tokyo {background-image: url(assets/tokyo.jpg);}
+.moonfall {background-image: url(assets/moonFall.jpg);}
+.paris {background-image: url(assets/lifeInParis.jpg);}
+.gucci {background-image: url(assets/houseOfGucci.jpg);}
+
+.topcard-favorito {
+    position: absolute;
+    right: 0;
+    margin: 20px;
+    padding: 8px 8px 4px 8px;
+    background-color: var(--whiteGrey);
+    text-align: center;
+    border-radius: 8px;
+}
+
+.lista_item-bottomcard {
+    height: 85px;
+    background-color: var(--whiteGrey);
+    padding: 16px 0 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    font-family: var(--fontePoppins);
+    border-radius: 0 0 26px 26px;
+
+}
+
+.lista_item-titulo {
+    font-weight: 600;
+}
+
+.KeepWatch_carrosel_lista {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    height: 401px;
+}
+
+.KeepWatch_carrosel_lista .lista_item-topcard {
+    background-position: center;
+}
+
+.filme01 {background-image: url(assets/Group118.jpg)}
+.filme02 {background-image: url(assets/Group117.png)}
+.filme03 {background-image: url(assets/Group116.png)}
+
+
+.father {
+    background-image: url(assets/heart.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 24px;
+}
+
+.father:hover {
+    background-image: url(assets/heartFill.png);
+}
+
+
+.rodape {
+    width: 100%;
+    height: 100px;
+    background-color: var(--black);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    margin-top: 40px;
+}
+
+.informacoes {
+    font-family: var(--fontePoppins);
+    color: var(--white);
+    text-decoration: none;
 }

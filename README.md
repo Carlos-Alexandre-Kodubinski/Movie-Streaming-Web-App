@@ -6,3 +6,8 @@ Utilezei como base um projeto do figma que encontrei na web para treinar HTML e 
 
 Abaixo o layout que utilizei para a pagina inicial.
 ![Alt text](figma/Home-screen.png)
+
+## Layout recriado 
+
+![alt text](figma/layoutSite.jpg)
+

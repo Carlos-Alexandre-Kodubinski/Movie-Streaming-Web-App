@@ -9,5 +9,5 @@ Abaixo o layout que utilizei para a pagina inicial.
 
 ## Layout recriado 
 
-![alt text](figma/layoutSite.jpg)
+![alt text](figma/layoutSite.png)
 
